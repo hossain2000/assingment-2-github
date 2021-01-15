@@ -4,54 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assingment 2</title>
+    <!--Favicon-->
     <link rel="shortcut icon" type="image/svg" href="images/logo.svg"/>
+    <!--Fontwaome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+   <!--Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--CSS File-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
  
+
+  
  <!--Nav Bar Section Start-->  
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-nav shadow-sm">
-        <div class="container">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand nav-logo-small" href="#">
-              <img src="images/logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
-              Hossain Shop
-            </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-small-h">
-              <li class="nav-item">
-                <a class="nav-link active nav-ac" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-a" href="#">Category</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-a" href="#">Bolg</a>
-              </li>              
-              <li class="nav-item">
-                <a class="nav-link nav-a" href="#">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-a" href="#"><i class="bi bi-search"></i></a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn nav-a" type="submit">Sign In</button>
-              <button class="btn rounded-pill bg-primary text-white nav-signup" type="submit">Sign Up</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </nav>
-</header>
+ <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container-fluid container">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+      Hossain Shop
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#jacket-section">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
  <!--Nav Bar Section End-->  
 
 
+<!--Home Page Section Start--> 
+  <div class="section section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-4">
+          <div class="to-sc-content">
+
+           <h1 class="text-primary">BE THE PENGIUN</h1><h1>OF WINTER</h1>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            <p><button class="btn btn-primary mt-4"><i style="margin-right: 5px; "  class="fas fa-shopping-cart"></i>BUY NOW</button></p>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-4">
+          <img style="width: 80%;" src="images/shop.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+<!--Home Page Section End--> 
+
+
+
+<!--Section 2  Card Start-->
+<div id="jacket-section" class="section">
+  <div class="container">
+    <div class="header-title"><h1>Women Jacket</h1></div>
+  <div class="cardgroup">
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="jacket/j1.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="jacket/j2.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="jacket/j3.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="jacket/j1.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+  </div>
+  </div>
+</div>
+<!--Section 2 Card End-->
+
+<!--Section 3 Card Start-->
+<div class="section">
+  <div class="container">
+    <div class="header-title"><h1>Travel Bag</h1></div>
+  <div class="cardgroup">
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="bag/bag1.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="bag/bag3.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="bag/bag2.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+<!--Card Start-->
+<div class="card">
+ <div class="imgcontainer">
+     <img src="bag/bag1.png" alt="">
+ </div>
+ <div class="info-box">
+     <div class="title">Yellow Coat Jacket</div>
+    <div class="card-mini-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+     <div class="price">
+         $200
+     </div>
+     <div class="buttonGroup">
+         <button class="buybtn"><i class="shop-icon fas fa-shopping-cart"></i>BUY NOW</button>
+         <button class="addTocard">Add To Card</button>
+     </div>
+ </div>
+</div>
+<!--Card End-->
+  </div>
+  </div>
+</div>
+<!--Section 3 Card End-->
 
 
 
@@ -59,11 +256,6 @@
 
 
 
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
 </body>
 </html>
